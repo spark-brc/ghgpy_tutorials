@@ -1,0 +1,26 @@
+name: ghgpy_tut
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas>=2.0
+  - numpy>=1.25 
+  - matplotlib 
+  - jupyter 
+  - pip
+  - notebook 
+  - scipy 
+  - shapely
+  - rtree
+  - pyproj>=2.0
+  - pyshp
+  - git
+  - nbconvert
+  - pip:
+    - -e ./dependencies/ghgpy
+    # - flopy
+    # - git+https://github.com/modflowpy/flopy.git
+    # - pyemu
+    # - git+https://github.com/pypest/pyemu.git@develop
+    - termcolor
+    - tqdm
