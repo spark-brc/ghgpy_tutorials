@@ -5,7 +5,7 @@ ghgpy
 .. image:: https://img.shields.io/pypi/v/ghgpy?color=blue
    :target: https://pypi.python.org/pypi/ghgpy
    :alt: PyPI Version
-.. image:: https://img.shields.io/pypi/l/ghgpy
+.. image:: https://img.shields.io/pypi/l/swatmf
    :target: https://opensource.org/licenses/BSD-3-Clause
    :alt: PyPI - License
 
