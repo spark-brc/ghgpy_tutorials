@@ -1,3 +1,22 @@
+Metadata-Version: 2.1
+Name: ghgpy
+Version: 0.0.0
+Summary: ghgpy is a set of python modules to simulate Greenhouse gases emission.
+Download-URL: https://pypi.org/project/ghgpy
+Author: Seonggyu Park
+Author-email: <envpsg@gmail.com>
+Project-URL: Bug Tracker, https://github.com/spark-brc/ghgpy/issues
+Project-URL: Source Code, https://github.com/spark-brc/ghgpy
+Project-URL: Documentation, https://github.com/spark-brc/ghgpy
+Keywords: GHGs,Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: BSD License
+Description-Content-Type: text/x-rst
+
 ======
 ghgpy
 ======
@@ -97,7 +116,7 @@ A browser window with a Jupyter notebook instance should open. Yay!
    >>> prj_dir = "project directory"
    >>> swatmfwd = "SWAT-MODFLOW model"
    >>> swatwd = "SWAT model"
-   >>> swatmf_pst_utils.init_setup(prj_dir, swatmfwd, swatwd)
+   >>> swatmf_pst_utils.init_setup(prj_dir, swatmfwd, swatwd))
 
    Creating 'backup' folder ... passed
    Creating 'echo' folder ... passed
