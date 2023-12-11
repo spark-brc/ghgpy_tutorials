@@ -92,19 +92,20 @@ A browser window with a Jupyter notebook instance should open. Yay!
 
 .. code-block:: python
 
-   from swatmf import swatmf_pst_utils
+   # use ghgpy module
+   from ghgpy.runs import run_dc_multi, run_dndc
+   from ghgpy.utils import PostPr
+   from ghgpy.analyzer import (
+      plot_oom, plot_tseries_ch4, plot_tseries_ch4_tot, plot_violin, plot_oot)
+
+
 
    >>> prj_dir = "project directory"
-   >>> swatmfwd = "SWAT-MODFLOW model"
-   >>> swatwd = "SWAT model"
-   >>> swatmf_pst_utils.init_setup(prj_dir, swatmfwd, swatwd))
+   >>> run_dc_multi(prj_dir)
 
-   Creating 'backup' folder ... passed
-   Creating 'echo' folder ... passed
-   Creating 'sufi2.in' folder ... passed
-   'Absolute_SWAT_Values.txt' file copied ... passed
-   'pestpp-glm' file copied ... passed
-   'pestpp-ies.exe' file copied ... passed
-   'pestpp-ies.exe' file copied ... passed
-   'forward_run.py' file copied ... passed
+   # read output and observed data
+   >>> so_df = PostPr(wd).get_ch4_so_df(outfnam="ch4_multi_dc.out")
+   # plot CH4 emissions in timeseries
+   plot_tseries_ch4(so_df, simnam="ch4e_tot", height=3, dot=False)
+
 
