@@ -98,7 +98,7 @@ class DCmodel(object):
         """
         si = self.soil_index(sand_cont)
 
-
+        # 1 g/m² to kg/ha = 10 kg/ha
         c_root_ = self.parms.frac_to_exd * si * root_c_prod
         return c_root_
 

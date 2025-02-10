@@ -96,9 +96,7 @@ A browser window with a Jupyter notebook instance should open. Yay!
    from ghgpy.runs import run_dc_multi, run_dndc
    from ghgpy.utils import PostPr
    from ghgpy.analyzer import (
-      plot_oom, plot_tseries_ch4, plot_tseries_ch4_tot, plot_violin, plot_oot)
-
-
+            plot_oom, plot_tseries_ch4, plot_tseries_ch4_tot, plot_violin, plot_oot)
 
    >>> prj_dir = "project directory"
    >>> run_dc_multi(prj_dir)
